@@ -1,0 +1,99 @@
+let footerLinks = [{
+    platform: "GitHub",
+    codename: "github",
+    username: "kolehiyolo",
+    link: "https://github.com/kolehiyolo",
+    fontAwesomeClass: "fa-github",
+    color: "#384963",
+    type: "coder"
+}, {
+    platform: "NPM",
+    codename: "npm",
+    username: "kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-npm",
+    color: "#c60000",
+    type: "coder"
+}, {
+    platform: "Linkedin",
+    codename: "linkedin",
+    username: "Tristan Sean Paul Cinco",
+    link: "https://www.linkedin.com/in/tristan-sean-paul-cinco-8685061a1/",
+    fontAwesomeClass: "fa-linkedin-in",
+    color: "#0d86ff",
+    type: "coder"
+}, {
+    platform: "Facebook",
+    codename: "facebook",
+    username: "Tristan Sean Paul Cinco",
+    link: "https://www.facebook.com/tristanseanpaul.cinco.21/",
+    fontAwesomeClass: "fa-facebook",
+    color: "#1877f2",
+    type: "social"
+}, {
+    platform: "Instagram",
+    codename: "instagram",
+    username: "kolehiyolo",
+    link: "https://www.instagram.com/kolehiyolo/",
+    fontAwesomeClass: "fa-instagram",
+    color: "#cf015b",
+    type: "social"
+}, {
+    platform: "Twitter",
+    codename: "twitter",
+    username: "@kolehiyolo1221",
+    link: "https://twitter.com/kolehiyolo1221",
+    fontAwesomeClass: "fa-twitter",
+    color: "#1d9bf0",
+    type: "social"
+}, {
+    platform: "Telegram",
+    codename: "telegram",
+    username: "Kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-telegram",
+    color: "#29a9ea",
+    type: "social"
+}, {
+    platform: "WhatsApp",
+    codename: "whatsapp",
+    username: "Kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-whatsapp",
+    color: "#5acf68",
+    type: "social"
+}, {
+    platform: "Discord",
+    codename: "discord",
+    username: "kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-discord",
+    color: "#5865f2",
+    type: "social"
+}, {
+    platform: "YouTube",
+    codename: "youtube",
+    username: "kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-youtube",
+    color: "#fe0000",
+    type: "content"
+}, {
+    platform: "Soundcloud",
+    codename: "soundcloud",
+    username: "kolehiyolo",
+    link: "/",
+    fontAwesomeClass: "fa-soundcloud",
+    color: "#f94d0f",
+    type: "content"
+}, {
+    platform: "Patreon",
+    codename: "patreon",
+    username: "Kolehiyolo",
+    link: "https://www.patreon.com/kolehiyolo",
+    fontAwesomeClass: "fa-patreon",
+    color: "#ee6551",
+    type: "content"
+}];
+
+export default footerLinks;

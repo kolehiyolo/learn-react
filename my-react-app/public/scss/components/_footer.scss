@@ -1,0 +1,114 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 100px;
+
+    p {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    &--copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &--socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+
+        &--div {
+            position: relative;
+
+            &--link {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+                padding: 10px;
+                z-index: 2;
+                position: relative;
+            }
+            
+            &--link:hover {
+                color: rgb(160, 160, 160);
+            }
+
+            &--link:hover+.footer--socials--div--tooltip>.footer--socials--div--tooltip--container {
+                z-index: 1;
+                opacity: 1;
+                transition: opacity 0.3s, z-index 0s step-start, transform 0.3s;
+                transform: translate(0px, 0px) !important;
+            }
+
+            &--tooltip {
+                color: white;
+                font-size: 13px;
+                
+                &--container {
+                    padding: 5px 10px;
+                    border-radius: 4px;    
+                    z-index: -1;
+                    opacity: 0;
+                    transition: opacity 0.3s, z-index 0.3s step-end, transform 0.3s;
+                    transform: translate(0px, 20px) !important;
+                    p {
+                        padding: 0;
+                    }
+
+                    &--platform {
+                        font-weight: 500;
+                    }
+
+                    &--username {
+                        font-style: italic;
+                    }
+
+                    #arrow,
+                    #arrow::before {
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        background: inherit;
+                    }
+
+                    #arrow {
+                        visibility: hidden;
+                        // transform: translate(62px, 0) !important;
+                    }
+
+                    #arrow::before {
+                        visibility: visible;
+                        content: '';
+                        transform: rotate(45deg);
+                    }
+
+                    #tooltip[data-popper-placement^='top']>#arrow {
+                        bottom: -4px;
+                    }
+
+                    #tooltip[data-popper-placement^='bottom']>#arrow {
+                        top: -4px;
+                    }
+
+                    #tooltip[data-popper-placement^='left']>#arrow {
+                        right: -4px;
+                    }
+
+                    #tooltip[data-popper-placement^='right']>#arrow {
+                        left: -4px;
+                    }
+                }
+
+            }
+        }
+    }
+}

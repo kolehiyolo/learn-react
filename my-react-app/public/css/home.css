@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #181818;
+  color: white;
+}
+
+html body #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+html body #root .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 100px;
+}
+html body #root .header p {
+  margin: 0;
+  padding: 20px 0;
+}
+html body #root .header--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+html body #root .header--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+html body #root .header--nav a {
+  color: white;
+  text-decoration: none;
+}
+html body #root .header--nav button {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+html body #root .main {
+  flex-grow: 1;
+  margin: 0 100px;
+}
+html body #root .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 100px;
+}
+html body #root .footer p {
+  margin: 0;
+  padding: 20px 0;
+}
+html body #root .footer--copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+html body #root .footer--socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+html body #root .footer--socials--div {
+  position: relative;
+}
+html body #root .footer--socials--div--link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 10px;
+  z-index: 2;
+  position: relative;
+}
+html body #root .footer--socials--div--link:hover {
+  color: rgb(160, 160, 160);
+}
+html body #root .footer--socials--div--link:hover + .footer--socials--div--tooltip > .footer--socials--div--tooltip--container {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.3s, z-index 0s step-start, transform 0.3s;
+  transform: translate(0px, 0px) !important;
+}
+html body #root .footer--socials--div--tooltip {
+  color: white;
+  font-size: 13px;
+}
+html body #root .footer--socials--div--tooltip--container {
+  padding: 5px 10px;
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, z-index 0.3s step-end, transform 0.3s;
+  transform: translate(0px, 20px) !important;
+}
+html body #root .footer--socials--div--tooltip--container p {
+  padding: 0;
+}
+html body #root .footer--socials--div--tooltip--container--platform {
+  font-weight: 500;
+}
+html body #root .footer--socials--div--tooltip--container--username {
+  font-style: italic;
+}
+html body #root .footer--socials--div--tooltip--container #arrow,
+html body #root .footer--socials--div--tooltip--container #arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+html body #root .footer--socials--div--tooltip--container #arrow {
+  visibility: hidden;
+}
+html body #root .footer--socials--div--tooltip--container #arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+html body #root .footer--socials--div--tooltip--container #tooltip[data-popper-placement^=top] > #arrow {
+  bottom: -4px;
+}
+html body #root .footer--socials--div--tooltip--container #tooltip[data-popper-placement^=bottom] > #arrow {
+  top: -4px;
+}
+html body #root .footer--socials--div--tooltip--container #tooltip[data-popper-placement^=left] > #arrow {
+  right: -4px;
+}
+html body #root .footer--socials--div--tooltip--container #tooltip[data-popper-placement^=right] > #arrow {
+  left: -4px;
+}/*# sourceMappingURL=home.css.map */
